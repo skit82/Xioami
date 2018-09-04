@@ -159,6 +159,7 @@ body {
  	}
  	.feedback {
  		width: 100%;
+ 		margin-bottom: 25px;
  	}
  	.feedback__form {
  		background-image: url(../img/feedback-bg.png);
@@ -248,5 +249,57 @@ body {
  		.feedback__button {
  			font-size: 30px;
  		}
+ 	}
+ 	.footer {
+ 		width: 100%;
+ 	}
+ 	.footer-head {
+ 		background-color: #00b2e6;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+    color: #fff;
+ 	}
+ 	.footer-head__inner {
+ 		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto 20px 0;
+    max-width: 1170px;
+    overflow: visible;
+    padding: 5px 0;
+    text-align: center;
+ 	}
+ 	.footer-head__item {
+ 		flex: 1 0 auto;
+    margin: auto;
+    padding: 5px;
+ 	}
+ 	.footer-head__link {
+ 		color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    white-space: nowrap;
+ 	}
+ 	.footer-social {
+ 		align-items: baseline;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+ 	}
+ 	.footer-social__link {
+ 		background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 47px;
+    width: 47px;
+ 	}
+ 	.footer-social__link--vk {
+ 		background-image: url(../img/vk.png);
+ 	}
+ 	.footer-social__link--instagram {
+ 		background-image: url(../img/inst.png);
+ 	}
+ 	.footer-social__link--youtube {
+ 		background-image: url(../img/youtube.png);
  	}
 }
