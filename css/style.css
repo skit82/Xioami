@@ -30,7 +30,158 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 }
-@media screen and (min-width: 320px) and (max-width: 1180px) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.header-logo {
+		align-content: center;
+    align-items: center;
+    background-color: #000;
+    border-bottom: 7px solid #00b2e6;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+	}
+	.header-logo__title {
+		font-size: 25px;
+    line-height: 1.4em;
+    font-weight: 100;
+    margin: 0;
+    min-height: 55px;
+    padding: 10px 5px 5px;
+    text-transform: uppercase;
+	}
+	.accent {
+		color: #00b2e6;
+	}
+	.header-menu {
+    width: 100%;
+		background-color: #1e1e1e;
+    border-bottom: 7px solid #e6e6e6;
+	}
+	.header-menu__inner {
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1140px;
+    min-height: 55px;
+    overflow: visible;
+    padding: 0;
+	}
+	.header-menu__item--tel {
+		padding: 10px 0 0;
+	}
+		.header-menu__item {
+			background-position: 13%;
+    	background-repeat: no-repeat;
+    	border-right: 1px solid #4b4b4b;
+    	flex: 1 0 auto;
+    }
+	.header-menu__link {
+		align-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    min-height: 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+	}
+	.header-menu__link--tel {
+		display: inline;
+    padding-top: 10px;
+    vertical-align: top;
+	}
+	.header-menu__link--tel .accent {
+    font-size: 30px;
+  }
+	@media screen and (max-width: 767px) {
+		.header-menu__item {
+    	border-bottom: 1px solid #4b4b4b;
+    	border-right: none;
+    	width: 100%;
+		}
+		.header-menu__item--tel {
+    	padding: 10px 0 0 20%;
+		}
+		.header-menu__link {
+			justify-content: center;
+		}
+	}
+	.advantages__title {
+		margin: 0px;
+		margin-bottom: 75px;
+		text-align: center;
+		padding: 0px;
+		font-size: 36px;
+		font-weight: 100;
+	}
+	.advantages__text {
+		margin: 0px;
+		padding: 0px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+	.advantages__name {
+		margin: 0px;
+		padding: 0px;
+		font-size: 36px;
+		font-weight: 100;
+	}
+	.advantages__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0px;
+		padding: 0px;
+	}
+	.advantages__item {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+	}
+	@media screen and (max-width: 767px) {
+		.advantages__title {
+			font-size: 26px;
+		}
+		.advantages__name {
+			font-size: 24px;
+		}
+		.advantages__text {
+			font-size: 20px;
+		}
+		.advantages__inner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.advantages__item {
+			display: flex;
+			flex-direction: column;
+		}
+	}
 	.personal-data {
 		margin-bottom: 100px;
 	}
@@ -56,7 +207,7 @@ body {
 	.personal-data__text:last-child {
 		margin-bottom: 0px;
 	}
-	@media (min-width: 320px) {
+	@media (max-width: 767px) {
  		.personal-data__title {
  			font-size: 26px;
  		}
@@ -64,16 +215,7 @@ body {
  			padding: 0 10px;
  			font-size: 18px;
  		}
- 	@media (min-width: 750px) {
- 		.personal-data__title {
- 			font-size: 36px;
- 		}
- 		.personal-data__text {
- 			font-size: 30px;
- 			padding-left: 25px;
- 			padding-right: 47px;
- 		}
- 	}
+	}
  	.address {
  		position: relative;
  	}
@@ -211,7 +353,7 @@ body {
     font-size: 36px;
     font-weight: 400;
     padding: 10px;
-    background-color: #ac82d6;
+    background-color: #00b2e6;
     border: none;
     border-radius: 100px;
  	}
@@ -260,10 +402,9 @@ body {
  	}
  	.footer-head__inner {
  		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     margin: auto 20px 0;
-    max-width: 1170px;
+    max-width: 1140px;
     overflow: visible;
     padding: 5px 0;
     text-align: center;
@@ -283,7 +424,9 @@ body {
  		align-items: baseline;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
+    width: 187px;
+    padding: 0px;
+    list-style: none;
  	}
  	.footer-social__link {
  		background-position: 50%;
@@ -302,4 +445,3 @@ body {
  	.footer-social__link--youtube {
  		background-image: url(../img/youtube.png);
  	}
-}
