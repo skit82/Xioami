@@ -522,4 +522,119 @@ placeholder {
 		text-align: left;
 	}
 }
-
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 100%;
+}
+.main__title {
+	margin: 0px;
+	padding: 0px;
+	font-size: 36px;
+	font-weight: 100;
+	text-align: center;
+}
+.catalog__model {
+	display: block;
+  margin: 20px;
+  padding: 15px;
+  flex: 1 0 25%;
+  font-size: 28px;
+  font-weight: 100;
+  color: #262626;
+  text-align: center;
+  text-decoration: none;
+  background: #fff;
+  z-index: 1;
+}
+.catalog__model:last-child {
+	display: none;
+}
+@media screen and (max-width: 480px) {
+	.catalog__model {
+		flex: 0 0 100%;
+    max-width: calc(100% - 5px);
+	}
+}
+@media screen and (max-width: 767px) {
+	.catalog__model {
+		flex: 1 0 50%;
+		margin: 5px;
+		font-size: 18px;
+		font-weight: 100;
+	}
+	.main__title {
+		font-size: 28px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.catalog__model {
+		font-size: 18px;
+	}
+	.catalog__model:last-child {
+		display: block;
+	}
+}
+.product__header {
+	width: 100%;
+	margin: 0px;
+	padding: 0 20px 20px;
+	font-size: 16px;
+	font-weight: 100;
+	border-collapse: collapse;
+}
+.product__title {
+	font-size: 36px;
+	font-weight: 100;
+	text-align: center;
+}
+.product__img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.product__name {
+	font-size: 16px;
+	font-weight: 100;
+	color: #ffffff;
+	text-align: center;
+  padding: 7px 0;
+  vertical-align: top;
+  background: #00a9e0;
+  border: 0;
+}
+.product__point {
+	display: block;
+	font-style: italic;
+}
+.product__list {
+	min-height: 170px;
+}
+.product__list:nth-child(2n+1) {
+	background-color: #f3f1f1;
+}
+.product__header td {
+	padding: 7px 30px;
+	color: #3c3c3c;
+	border: 0;
+	font-weight: 100;
+	text-align: center;
+	min-height: 170px;
+}
+.product__header td:first-child {
+	text-align: left;
+} 
+@media screen and (min-width: 1024px) {
+	.product__header {
+		margin: 0 auto 0 0;
+	}
+}
+@media (max-width: 767px) and (min-width: 320px) {
+	.product__header td {
+		padding: 7px 2px;
+	}
+	.product__title {
+		font-size: 26px;
+	}
+}
