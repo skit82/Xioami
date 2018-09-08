@@ -75,6 +75,15 @@ input[type="radio"].visually-hidden {
 	background-color: #1e1e1e;
 	border-bottom: 7px solid #e6e6e6;
 }
+.header-menu__item--smartphone {
+	background-image: url(../img/smartphone.png);
+}
+.header-menu__item--tablet {
+	background-image: url(../img/tablet.png);
+}
+.header-menu__item--watch {
+	background-image: url(../img/watch.png);
+}
 .header-menu__inner {
 	display: flex;
 	flex-wrap: wrap;
@@ -117,6 +126,9 @@ input[type="radio"].visually-hidden {
 .header-menu__link--tel .accent {
 	font-size: 30px;
 }
+.header-menu__item--open {
+	display: none;
+}
 @media screen and (max-width: 767px) {
 	.header-menu__item {
 		border-bottom: 1px solid #4b4b4b;
@@ -128,6 +140,212 @@ input[type="radio"].visually-hidden {
 	}
 	.header-menu__link {
 		justify-content: center;
+	}
+	.header-menu__item--open {
+	display: block;
+}
+}
+.description {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.description__inner {
+	padding: 0 10px;
+}
+.description__title {
+	margin: 0px;
+  margin-bottom: 18px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+.description__text {
+	margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: justify;
+  text-indent: 20px;
+}
+.description__btn {
+	display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: rgb(0, 178, 230);
+  border: 0;
+}
+@media screen and (min-width: 767px) {
+	.description__title {
+		font-size: 36px;
+	}
+	.description__text {
+		font-size: 26px;
+	}
+	.description__inner {
+		padding-left: 0 36px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.description__inner {
+		padding: 0 54px;
+	}
+	.description__text {
+		font-size: 16px;
+	}
+}
+.repair__title {
+	margin: 0px;
+  margin-bottom: 38px;
+  font-size: 28px;
+  font-weight: 100;
+  text-align: center;
+}
+.repair__list {
+	margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.repair__item {
+	margin-bottom: 20px;
+	list-style: none;
+}
+.repair__item:last-child {
+	display: none;
+}
+.repair__link {
+	text-decoration: none;
+}
+.repair__inner {
+	display: block;
+  width: 239px;
+  min-height: 308px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #00b2e6;
+}
+.repair__img {
+	padding: 19px;
+}
+.repair__text {
+	font-weight: 100;
+  margin: 0px;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 20px;
+}
+@media screen and (min-width: 767px) {
+	.repair__title {
+		font-size: 36px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.repair__item:last-child {
+		display: block;
+	}
+}
+.contact__title {
+	margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  color: #8f8f8f;
+}
+.contact__name {
+	margin: 0px;
+	margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+  color: #b8b8b8;
+}
+.contact__list {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+.contact__item {
+	list-style: none;
+}
+.contact__img {
+	display: block;
+	width: 280px;
+	height: 100%;
+	padding-left: 20px;
+}
+.contact__header {
+	padding: 0 15px;
+	margin: 5px;
+}
+.contact__text {
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 100;
+}
+.contact__link {
+	text-decoration: none;
+	color: #000000;
+}
+.contact__block {
+	display: block;
+}
+.video__foto {
+	display: block;
+	width: 300px;
+	height: 100%;
+	padding: 0 20px;
+}
+.location__text {
+	margin: 0px;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: justify;
+  text-indent: 20px;
+}
+.location__inner {
+	margin: 5px;
+	padding: 15px;
+}
+.location {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+@media screen and (min-width: 767px) {
+	.contact__img {
+		width: 360px;
+		height: 100%;
+	}
+	.contact__text {
+		margin-bottom: 24px;
+    font-size: 22px;
+	}
+	.contact__item {
+		flex-grow: 1;
+	}
+	.contact__header {
+		max-width: 244px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0px;
+    margin: 0px;
+	}
+	.video__foto {
+		padding: 20px;
+    width: 750px;
 	}
 }
 .advantages__title {
@@ -740,3 +958,4 @@ placeholder {
 		font-size: 26px;
 	}
 }
+
