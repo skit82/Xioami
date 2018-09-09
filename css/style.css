@@ -1007,7 +1007,13 @@ placeholder {
   text-align: center;
   text-decoration: none;
   background: #fff;
-  z-index: 1;
+}
+.catalog__line {
+	display: block;
+  margin-top: 10px;
+  max-width: 370px;
+  height: 2px;
+  background-color: #40c5ec;
 }
 .catalog__model:last-child {
 	display: none;
@@ -1161,4 +1167,25 @@ placeholder {
 		min-height: 490px;
 		background-size: contain;
 	}
+}
+.filter__list-top {
+	width: 100%;
+}
+.filter__list-top-body {
+	display: flex;
+	margin: 0 auto;
+	max-width: 640px;
+	margin-top: 25px;
+}
+.filter__list-top-body a {
+	display: block;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 50px;
+  margin: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
 }
