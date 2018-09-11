@@ -85,8 +85,14 @@ input[type="radio"].visually-hidden {
 .header-menu__item--watch {
 	background-image: url(../img/watch.png);
 }
-.header-menu__item--humburger {
-	background-image: url(../img/hamburger.svg);
+.header-menu__foto {
+	display: flex;
+	margin-left: auto;
+}
+.header-menu__img {
+	position: absolute;
+	top: 10px;
+	left: 30px;
 }
 .header-menu__inner {
 	display: flex;
@@ -121,13 +127,23 @@ input[type="radio"].visually-hidden {
 	display: none;
 	padding: 0px;
 }
+.header-social {
+	padding: 0px;
+  margin: 10px;
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+.header-social__item {
+	list-style: none;
+}
 .header-menu__wrraper {
 	position: absolute;
 	top:0px;
 	left: 0px;
 	max-width: 400px;
 	width: 100%;
-	height: 650px;
+	min-height: 650px;
 	background-color: #ffffff;
 	box-shadow: inset 0px 0px 38px 0px rgb(0, 0, 0);
 	z-index: 1;
@@ -136,6 +152,7 @@ input[type="radio"].visually-hidden {
 	padding: 10px 0 0;
 }
 .header-menu__item {
+	position: relative;
 	background-position: 13%;
 	background-repeat: no-repeat;
 	border-right: 1px solid #4b4b4b;
@@ -973,6 +990,29 @@ placeholder {
 	justify-content: space-between;
 	max-width: 1140px;
 	margin: 0 auto;
+}
+.footer-payment__foto--up {
+	width: 100%;
+	height: 100%;
+}
+.footer-paymet__foto--telefon {
+	width: 100%;
+	height: 100%;
+}
+.footer-payment__foto--mastercard {
+	width: 16%;
+	height: 100%;
+}
+.footer-payment__foto--visa {
+	width: 27%;
+	height: 100%;
+}
+.footer-payment__foto--vtb {
+	width: 40%;
+	height: 100%;
+}
+.footer-payment__item--two {
+	text-align: center;
 }
 .footer-payment__list {
 	padding: 0px;
