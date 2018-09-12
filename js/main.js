@@ -7,6 +7,12 @@ $(document).ready(function(){
     	});
 	})
 
+	$("#makeMeScrollable").smoothDivScroll({
+			mousewheelScrolling: "allDirections",
+			manualContinuousScrolling: true,
+			autoScrollingMode: "onStart"
+		});
+
 	$(function(){
         $('a[href^="#"]').click(function(){
             var target = $(this).attr('href');

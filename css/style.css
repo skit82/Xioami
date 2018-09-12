@@ -326,17 +326,58 @@ input[type="radio"].visually-hidden {
 	margin: 0px;
   padding: 0px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   max-width: 1140px;
   margin: 0 auto;
 }
+#makeMeScrollable {
+	width: 100%;
+  height: 330px;
+  position: relative;
+}
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+#makeMeScrollable div.scrollableArea li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0 10px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+div.scrollingHotSpotLeft {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(../img/arrow_left.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+}
+div.scrollingHotSpotRight {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(../img/arrow_right.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+}
 .repair__item {
 	margin-bottom: 20px;
 	list-style: none;
-}
-.repair__item:last-child {
-	display: none;
 }
 .repair__link {
 	text-decoration: none;
@@ -346,8 +387,12 @@ input[type="radio"].visually-hidden {
   width: 239px;
   min-height: 308px;
   margin: 0 auto;
+  padding: 0;
   border-radius: 10px;
   border: 1px solid #00b2e6;
+}
+.repair__inner:active {
+	border: 2px solid #00b2e6;
 }
 .repair__img {
 	padding: 19px;
