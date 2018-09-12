@@ -10,7 +10,9 @@ $(document).ready(function(){
 	$("#makeMeScrollable").smoothDivScroll({
 			mousewheelScrolling: "allDirections",
 			manualContinuousScrolling: true,
-			autoScrollingMode: "onStart"
+			autoScrollingMode: "onStart",
+			hotSpotScrollingInterval: 70,
+			hotSpotMouseDownSpeedBooster: 1
 		});
 
 	$(function(){
