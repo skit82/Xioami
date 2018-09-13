@@ -143,22 +143,22 @@
     direction: rtl
 }
 
-.owl-carousel .owl-dots {
-    position: absolute;
-    left: 30%;
-    bottom: 10%;
-}
-.owl-carousel ..owl-dot {    
-    display: inline-block;
-    width: 8px;
-    height: 15px;
-    margin-right: 8px;
-    vertical-align: top;
-    background-color: #0ebdf3;
-    border: 1px solid #0ebdf3;
-    border-radius: 50%;
-    cursor: pointer;
-}
+/*.owl-carousel .owl-dots {*/
+    /*position: absolute;*/
+    /*left: 30%;*/
+    /*bottom: 10%;*/
+/*}*/
+/*.owl-carousel ..owl-dot {    */
+    /*display: inline-block;*/
+    /*width: 8px;*/
+    /*height: 15px;*/
+    /*margin-right: 8px;*/
+    /*vertical-align: top;*/
+    /*background-color: #0ebdf3;*/
+    /*border: 1px solid #0ebdf3;*/
+    /*border-radius: 50%;*/
+    /*cursor: pointer;*/
+/*}*/
 
 .owl-carousel.owl-rtl .owl-item {
     float: right

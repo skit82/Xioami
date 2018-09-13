@@ -5,8 +5,8 @@
 
 .owl-theme .owl-controls .owl-buttons div {
     text-indent: -9999px;
-    /*width: 12px;*/
-    /*height: 18px;*/
+    width: 12px;
+    height: 18px;
     cursor: pointer
 }
 
@@ -16,11 +16,11 @@
 }
 
 .owl-theme .owl-controls .owl-buttons div.owl-prev {
-    background: url(../image/slider_arrow_left.png) no-repeat
+    background: url(../img/slider_arrow_left.png) no-repeat
 }
 
 .owl-theme .owl-controls .owl-buttons div.owl-next {
-    background: url(../image/slider_arrow_right.png) no-repeat
+    background: url(../img/slider_arrow_right.png) no-repeat
 }
 
 .owl-theme .owl-controls .owl-buttons div,.owl-theme .owl-controls .owl-page {

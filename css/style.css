@@ -540,11 +540,13 @@ div.scrollingHotSpotRight {
 .advantages__inner {
 	display: flex;
   flex-wrap: nowrap;
+  max-width: 1140px;
   margin: 0 auto;
   justify-content: space-around;
   padding: 0px 20px;
 }
 .advantages__item {
+	width: 100%;
 	margin-bottom: 62px;
 	list-style: none;
 }
@@ -563,7 +565,6 @@ div.scrollingHotSpotRight {
 	.advantages__item {
 		display: flex;
 		align-items: center;
-		padding-left: 130px;
 	}
 	.advantages__title {
 		font-size: 36px;

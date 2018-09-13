@@ -40,6 +40,7 @@ $(document).ready(function(){
 		navigation: true,
 		pagination: true,
 		singleItem: true,
+		autoplay:true,
 		items: 1,
 		responsive:{
 			0:{
@@ -48,7 +49,7 @@ $(document).ready(function(){
 			600:{
 				items:1
 			},
-			1200:{
+			1400:{
 				items:1
 			}
 		}
