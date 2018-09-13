@@ -11,7 +11,7 @@ $(document).ready(function(){
 			mousewheelScrolling: "allDirections",
 			manualContinuousScrolling: true,
 			autoScrollingMode: "onStart",
-			hotSpotScrollingInterval: 70,
+			hotSpotScrollingInterval: 200,
 			hotSpotMouseDownSpeedBooster: 1
 		});
 
@@ -33,6 +33,25 @@ $(document).ready(function(){
     });
     $('.footer-payment__foto--up').click(function() {
         $('html, body').stop().animate({scrollTop : 0}, 900);
+	});
+
+	$('#owl-example').owlCarousel({
+		loop:true,
+		navigation: true,
+		pagination: true,
+		singleItem: true,
+		items: 1,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},
+			1200:{
+				items:1
+			}
+		}
 	});
 });
 

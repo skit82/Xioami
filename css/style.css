@@ -539,10 +539,9 @@ div.scrollingHotSpotRight {
 }
 .advantages__inner {
 	display: flex;
-  flex-wrap: wrap;
-  max-width: 1140px;
+  flex-wrap: nowrap;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px 20px;
 }
 .advantages__item {
@@ -602,12 +601,6 @@ div.scrollingHotSpotRight {
 	}
 	.advantages__text {
 		font-size: 16px;
-	}
-	.advantages__item--price {
-		order: 4;
-	}
-	.advantages__item--warehouse {
-		order: 3;
 	}
 }
 .personal-data {
