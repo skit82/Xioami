@@ -635,6 +635,9 @@ div.scrollingHotSpotRight {
 .personal-data__text:last-child {
 	margin-bottom: 0px;
 }
+.personal-data__wrraper {
+	display: none;
+}
 @media (min-width: 767px) {
 	.personal-data {
 		margin-bottom: 100px;
@@ -646,6 +649,25 @@ div.scrollingHotSpotRight {
 		padding-left: 25px;
 		padding-right: 47px;
 		font-size: 28px;
+	}
+}
+@media (min-width: 1024px) {
+	.personal-data__wrraper {
+		display: block;
+		padding-left: 25px;
+	}
+	.personal-data__inner {
+		padding-left: 25px;
+	}
+	.personal-data__text {
+		padding: 0px;
+    padding-left: 25px;
+    padding-right: 35px;
+    margin-bottom: 25px;
+    font-size: 20px;
+	}
+	.content {
+		min-width: 886px;
 	}
 }
 .guidance__title {
@@ -765,6 +787,14 @@ div.scrollingHotSpotRight {
 .address__text:last-child {
 	color: #1e1e1e;
 }
+.sidebar-address {
+	display: none;
+}
+.main {
+	display: flex;
+	max-width: 1140px;
+	margin: 0 auto;
+}
 @media (min-width: 767px) {
 	.address {
 		margin-bottom: 50px;
@@ -791,6 +821,16 @@ div.scrollingHotSpotRight {
 	}
 	.address__phone {
 		font-size: 30px;
+	}
+}
+@media (min-width: 1024px) {
+	.address {
+		display: none;
+	}
+	.sidebar-address { 
+		display: block;
+    min-width: 256px;
+    text-align: center;
 	}
 }
 .feedback {
