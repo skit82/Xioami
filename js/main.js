@@ -54,6 +54,19 @@ $(document).ready(function(){
 			}
 		}
 	});
+
+	var $mapElement = $('#map'),
+    myMap = new ymaps.Map(
+        $mapElement[0],
+        ymaps.util.bounds.getCenterAndZoom(
+            [[55.7, 37.6], [55.8, 37.7]],
+            [$mapElement.width(), $mapElement.height()]
+        )
+    );
+
+    function autoFitToViewport () {
+    	map.container.autoFitToViewport();
+    }
 });
 
 	

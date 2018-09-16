@@ -249,6 +249,8 @@ input[type="radio"].visually-hidden {
 		align-items: flex-start;
 		position: sticky;
 		top: 0;
+		z-index: 10;
+		overflow: visible;
 	}
 }
 .description {
@@ -371,7 +373,7 @@ div.scrollingHotSpotLeft {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  z-index: 200;
+  z-index: 1;
   left: 0;
 }
 div.scrollingHotSpotRight {
@@ -382,7 +384,7 @@ div.scrollingHotSpotRight {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  z-index: 200;
+  z-index: 1;
   right: 0;
 }
 .repair__item {
@@ -724,7 +726,7 @@ div.scrollingHotSpotRight {
 .guidance__name {
 	margin: 0px;
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 100;
   text-align: center;
   color: #666666;
@@ -733,7 +735,7 @@ div.scrollingHotSpotRight {
 	.guidance__text {
 		padding-left: 26px;
 		padding-right: 46px;
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.guidance__title {
 		font-size: 36px;
@@ -1376,7 +1378,9 @@ placeholder {
 } 
 @media screen and (min-width: 1024px) {
 	.product__header {
+		width: 771px;
 		margin: 0 auto 0 0;
+		padding: 0px;
 	}
 }
 @media (max-width: 767px) and (min-width: 320px) {

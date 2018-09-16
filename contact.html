@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.css"/>
+  <link rel="stylesheet" href="css/owl.theme.css"/>
 	<title>Xiaomi</title>
 </head>
 <body>
-	<header class="header">
+	 <header class="header">
     <div class="header-logo">
-      <h1 class="header-logo__title"><a class="header-logo__link" href="index.html">Фирменный сервисный центр Huawei <span class="accent">Honor</span></a></h1>
+      <h1 class="header-logo__title"><a class="header-logo__link" href="">Фирменный сервисный центр Huawei <span class="accent">Honor</span></a></h1>
     </div>
     <nav class="header-menu">
       <ul class="header-menu__inner">
@@ -17,9 +19,55 @@
           <a href="tel:+74997073031" class="header-menu__link header-menu__link--tel">+7 (499) <span class="accent">707-30-31</span></a>
         </li>
         <li class="header-menu__item header-menu__item--open header-menu__item--humburger">
-          <a href="" class="header-menu__link ">
+          <img class="header-menu__img" src="img/hamburger.svg" alt="">
+          <a class="header-menu__link ">
             <span>Открыть меню</span>
           </a>
+            <ul class="header-menu__wrraper">
+              <img class="header-menu__foto" src="img/close.png">
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="">Главная</a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="">Услуги</a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="">Гарантии</a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="">Вызов курьера</a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="">Наши адреса</a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile" href="tel:+7(499)707-30-31">
+                +7(499)707-30-31
+                </a>
+              </li>
+              <li class="header-menu__items">
+                <a class="header-menu__mobile href="info@huawei-mobile-service.ru">
+                  info@huawei-mobile-service.ru
+                </a>
+              </li>
+              <ul class="header-social">
+              <li class="header-social__item">
+                <a class="header-social__link" href="">
+                  <img class="header-social__img" src="img/vk-mob.png" width="47" height="47" alt="В контакеу">
+                </a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="">
+                  <img class="header-social__img" src="img/inst-mob.png" width="47" height="47" alt="Инстограмм">
+                </a>
+              </li>
+              <li class="header-social__item">
+                <a class="header-social__link" href="">
+                  <img class="header-social__img" src="img/yotube-mob.png" width="47" height="47" alt="Ютуб">
+                </a>
+              </li>
+            </ul>
+          </ul>
         </li>
         <li class="header-menu__item header-menu__item--smartphone">
           <a href="" class="header-menu__link">
@@ -35,6 +83,19 @@
           <a href="" class="header-menu__link">
             <span>Ремонт часов</span>
           </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header-footer">
+      <ul class="header-footer__inner">
+        <li class="header-footer__item">
+          <a class="header-footer__link" href="">Услуги и сервис</a>
+        </li>
+        <li class="header-footer__item">
+          <a class="header-footer__link" href="">О компании</a>
+        </li>
+        <li class="header-footer__item">
+          <a class="header-footer__link" href="">Наши адресса и контакты</a>
         </li>
       </ul>
     </nav>
@@ -80,8 +141,8 @@
   			</ul>
   			<div class="location">
   				<div class="location__inner">
-  					<div class="location__map">
-  						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81692e91ad1803832ae00341d2b699a6b0ddc9725184e63bc98b568d18235e68&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+  					<div class="location__map" id="map">
+  						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Affaf4610a509aac90d58fb1d31808204740fc8351d595a2d498465ece533f93c&amp;width=1070&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
   					</div>
   					<p class="location__text">
   						Вам нужен выход из метро на площадь Киевского Вокзала. Выйдя из метро, переходите на другую сторону Новокузнецкой улицы и идите против движения автомобилей, до Древнеправославного собора (красный купол, видно практически сразу после выхода из метро). На пересечении ул. Новокузнецкая и 5-й Монетчиковский переулок - поверните налево проходите 1 дом и Вы на месте. На против нашего входа - здание "Российского института леса".
@@ -182,6 +243,38 @@
         </ul>
       </div>
     </div>
+    <div class="footer-payment">
+      <ul class="footer-payment__list">
+        <li class="footer-payment__item">
+          <a class="footer-payment__link" href="#e">
+            <img class="footer-payment__foto footer-payment__foto--up" src="img/ur-footer.png" width="82" height="80" alt="Вверх">
+          </a>
+        </li>
+        <li class="footer-payment__item footer-payment__item--two">
+          <a class="footer-payment__link" href="">
+            <img class="footer-payment__foto footer-payment__foto--mastercard" src="img/mastercard.png" width="83" height="50" alt="Мастер кард">
+          </a>
+          <a class="footer-payment__link" href="">
+            <img class="footer-payment__foto footer-payment__foto--visa" src="img/visa.png" width="160" height="52" alt="Виза">
+          </a>
+          <a class="footer-payment__link" href="">
+            <img class="footer-payment__foto footer-payment__foto--vtb" src="img/vtb24.png" width="182" height="50" alt="ВТБ">
+          </a>
+        </li>
+        <li class="footer-payment__item">
+          <a class="footer-payment__link" href="">
+            <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/telefon-footer.png" width="80" height="80" alt="Телефон">
+          </a>
+        </li>
+      </ul>
+    </div>
 	</footer>
+  <script  src="jquery/jquery-3.0.0.min.js"></script>
+  <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.kinetic.js"></script>
+  <script src="js/jquery.smoothdivscroll-1.3-min.js"></script>
+  <script src="jquery/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
