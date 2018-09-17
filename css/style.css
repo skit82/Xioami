@@ -89,11 +89,13 @@ input[type="radio"].visually-hidden {
 .header-menu__foto {
 	display: flex;
 	margin-left: auto;
+	cursor: pointer;
 }
 .header-menu__img {
 	position: absolute;
 	top: 10px;
 	left: 30px;
+	cursor: pointer;
 }
 .header-menu__inner {
 	display: flex;
@@ -113,9 +115,9 @@ input[type="radio"].visually-hidden {
 }
 .header-menu__mobile {
 	display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
   font-weight: 100;
   color: #000000;
   text-decoration: none;
@@ -142,9 +144,9 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top:0px;
 	left: 0px;
-	max-width: 400px;
+	max-width: 350px;
 	width: 100%;
-	min-height: 650px;
+	min-height: 500px;
 	background-color: #ffffff;
 	box-shadow: inset 0px 0px 38px 0px rgb(0, 0, 0);
 	z-index: 1;
@@ -222,6 +224,33 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform: uppercase;
   width: 100%
+}
+.header-footer__list {
+	position: absolute;
+	width: 290px;
+	left: 70px;
+	top: 45px;
+	padding: 0px;
+	background-color: rgb(250, 250, 250);
+	opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.header-footer__item:hover .header-footer__list {
+	opacity: 1;
+  transform: scaleY(1);
+} 
+.header-footer__blok {
+	list-style: none;
+}
+.header-footer__resource {
+	display: block;
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
+  padding-left: 58px;
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
 	.header-footer {
@@ -698,7 +727,7 @@ div.scrollingHotSpotRight {
     text-align: center;
 	}
 	.content {
-		max-width: 886px;
+		min-width: 886px;
 	}
 }
 .guidance__title {
@@ -932,7 +961,7 @@ div.scrollingHotSpotRight {
     display: flex;
     align-self: flex-start;
     padding: 0;
-    max-width: 256px;
+    min-width: 256px;
     margin: 0 auto;
     overflow-y: auto;
     display: block;
@@ -949,6 +978,9 @@ div.scrollingHotSpotRight {
 	}
 	.sidebar__text {
 		margin: 0px;
+		padding: 0 20px;
+		padding-bottom: 5px;
+    margin-bottom: 15px;
     font-size: 16px;
     font-weight: 100;
     color: #1e1e1e;
@@ -968,10 +1000,15 @@ div.scrollingHotSpotRight {
 	.sidebar__list,
 	.sidebar__lists {
 		padding: 0px;
+		margin: 0px;
 		list-style: none;
 	}
-	.sidebar__title {
+	.sidebar__list {
+		margin-bottom: 25px;
+	}
+	.sidebar__name {
 		margin: 0px;
+		margin-bottom: 5px;
     background-color: #00b2e6;
     color: #ffffff;
     font-size: 20px;
@@ -993,9 +1030,46 @@ div.scrollingHotSpotRight {
 	.sidebar__items {
 		line-height: 30px;
 	}
-	.sidebar__items:hover {
+	.sidebar__resourse {
+		display: block;
+		text-decoration: none;
+		color: #000000;
+	}
+	.sidebar__lists {
+		display: none;
+	}
+	.sidebar__item:hover .sidebar__lists {
+		display: block;
+	}
+	.sidebar__resourse:hover {
 		color: #11b7e8;
 		border-bottom: 1px solid #11b7e8;
+		text-decoration: blink;
+	}
+	.sidebar__top {
+		display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    margin-bottom: 30px;
+	}
+	.sidebar__meduam {
+		display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 22px;
+	}
+	.sidebar__bottom {
+		display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    margin-top: 22px;
 	}
 }
 .feedback {
@@ -1424,7 +1498,7 @@ placeholder {
 @media screen and (min-width: 1024px) {
 	.product__header {
 		width: 771px;
-		margin: 0 auto 0 0;
+		margin: 0 auto;
 		padding: 0px;
 	}
 }
@@ -1518,4 +1592,33 @@ placeholder {
   color: #ffffff;
   background-color: #000000;
   text-decoration: none;
+}
+@media (min-width: 1024px) {
+	.breadcrumbs-flashcard {
+		display: flex;
+    max-width: 1140px;
+    margin: 0px auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding: 0px;
+    list-style: none;
+	}
+	.breadcrumbs-flashcard__list:first-child {
+		padding-right: 20px;
+	}
+	.breadcrumbs-flashcard__list a {
+		font-size: 16px;
+		font-weight: 100;
+		color: #00b2e6;
+		text-decoration: none;
+	}
+	.breadcrumbs-flashcard__list:last-child {
+		font-size: 16px;
+		font-weight: 100;
+		color: #00b2e6;
+	}
+	.breadcrumbs-flashcard__list span {
+		padding: 0 10px;
+		color: #000000;
+	}
 }
