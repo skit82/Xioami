@@ -507,7 +507,7 @@ div.scrollingHotSpotRight {
 .contact__list {
 	display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px;
   margin: 0px;
 }
@@ -532,12 +532,45 @@ div.scrollingHotSpotRight {
 .contact__block {
 	display: block;
 }
+.video__foto {
+	width: 100%;
+	height: 100%;
+}
 .location__text {
-	margin: 0px;
+	margin: 5px;
+	padding: 10px;
   font-size: 18px;
   font-weight: 100;
   text-align: justify;
   text-indent: 20px;
+}
+.contact__address {
+	display: block;
+	padding-left: 30px;
+	background-size: 20px 20px;
+	background-image: url(../img/icon-address-desctop.png);
+	background-repeat: no-repeat;
+}
+.contact__tel {
+	display: block;
+	padding-left: 30px;
+	background-size: 20px 20px;
+	background-image: url(../img/icon-telefon-desctop.png);
+	background-repeat: no-repeat;
+}
+.contact__main {
+	display: block;
+	padding-left: 30px;
+	background-size: 20px 20px;
+	background-image: url(../img/icon-main-desctop.png);
+	background-repeat: no-repeat;
+}
+.contact__workhours {
+	display: block;
+	padding-left: 30px;
+	background-size: 20px 20px;
+	background-image: url(../img/icon-clock-desctop.png);
+	background-repeat: no-repeat;
 }
 .location__inner {
 	padding: 15px 0px;
@@ -561,7 +594,7 @@ div.scrollingHotSpotRight {
 		font-size: 30px;
 	}
 	.contact__header {
-		max-width: 400px;
+		max-width: 396px;
     padding: 0px;
     margin: 0px;
 	}
@@ -575,6 +608,7 @@ div.scrollingHotSpotRight {
 	}
 	.contact__list {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     margin-left: 38px;
     margin-right: 32px;
@@ -608,6 +642,9 @@ div.scrollingHotSpotRight {
 	}
 	.contact__text span {
 		vertical-align: top;
+	}
+	.video__foto {
+		width: 400px;
 	}
 }
 .advantages__title {
