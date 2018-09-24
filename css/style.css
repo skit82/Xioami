@@ -988,7 +988,13 @@ div.scrollingHotSpotRight {
     content: "";
     height: 1px;
     background: #e6e6e6;
-}
+	}
+	.guidance__title:before {
+		margin-right: 10px;
+	}
+	.guidance__title:after {
+		margin-left: 10px;
+	}
 	.guidance {
 		padding-left: 25px;
 	}
@@ -1086,7 +1092,7 @@ div.scrollingHotSpotRight {
 	padding-top: 50px;
 }
 .address__img {
-	width: 160px;
+	width: 50%;
 	height: 100%;
 	align-self: center;
 }
@@ -1142,6 +1148,34 @@ div.scrollingHotSpotRight {
 	.address {
 		margin-bottom: 50px;
 	}
+	.address__top {
+		display: block;
+    max-width: 695px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgb(0, 178, 230);
+	}
+	.address__meduam {
+		display: block;
+    width: 695px;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    margin-top: 20px;
+    background-color: rgb(0, 178, 230);
+	}
+	.address__bottom {
+		display: block;
+    max-width: 695px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(0, 178, 230);
+	}
+	.main__title {
+		font-size: 36px;
+	}
 	.address__inner {
 		padding-top: 70px;
 	}
@@ -1169,6 +1203,24 @@ div.scrollingHotSpotRight {
 @media (min-width: 1024px) {
 	.address {
 		display: none;
+	}
+	.main__title {
+		display: flex;
+		align-items: center;
+		font-size: 36px;
+	}
+	.main__title:before,
+	.main__title:after {
+		flex: 1 0 auto;
+		content: "";
+		height: 1px;
+		background: #e6e6e6;
+	}
+	.main__title:before {
+		margin-right: 10px;
+	}
+	.main__title:after {
+		margin-left: 10px;
 	}
 	.sidebar {
 		position: sticky;
